@@ -49,6 +49,7 @@ function userPassScoreQuery(){
 }
 
 function userPassScoreUpdate(){
+    $wx_code = $_POST['wx_id'];
     //修改 update pass score
     $sql = "UPDATE pass SET name = '123' WHERE wx_id = '{$wx_code}'";
     if (mysqli_query($conn, $sql))
